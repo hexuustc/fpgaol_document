@@ -106,7 +106,7 @@ nginx监听80端口，并将请求发送给localhost:8000来处理
 
 ## 登录功能
 
-![image-20210906114953393](C:\Users\hx\AppData\Roaming\Typora\typora-user-images\image-20210906114953393.png)
+![image-20210906114953393](./img/image-20210906114953393.png)
 
 #### 用户密码登录
 
