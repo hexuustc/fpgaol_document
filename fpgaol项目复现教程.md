@@ -43,7 +43,7 @@
 
 scp后放在树莓派目录~中即可
 
-如何需要配置nginx，具体配置详见fpgaol_pi_ng文档，其中的new_server文件夹在202.38.79.96中的~/fpgaol-ansible/new_server中
+然后需要配置nginx，具体配置详见fpgaol_pi_ng文档，其中的new_server文件夹在202.38.79.96中的~/fpgaol-ansible/new_server中
 
 其中的命令需要自己看懂并在自己电脑上执行
 
