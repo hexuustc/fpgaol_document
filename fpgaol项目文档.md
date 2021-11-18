@@ -54,7 +54,9 @@
 
 ## 项目运行
 
-#### **一般运行方式（后面是ip+端口）**
+### ***有三种运行方式（开发选第一种，服务器上选第三种）***
+
+#### **1. 一般运行方式（后面是ip+端口）**
 
 ```
 python3 manage.py runserver 202.38.79.134:80
@@ -62,13 +64,13 @@ python3 manage.py runserver 202.38.79.134:80
 
 **本服务器采用daphne来启动服务，并利用supervisor来进行管理**
 
-#### **daphne手动启动方式**（启动目录为~/fpgaol/fpgaol）
+#### **2. daphne手动启动方式**（启动目录为~/fpgaol/fpgaol，一般不用）
 
 ```
 daphne fpgaol.asgi:application -b localhost -p 8000
 ```
 
-#### **supervisor启动方式**(配置好的项目用此方式)
+#### **3. supervisor启动方式**(配置好的项目用此方式)
 
 ```
 sudo supervisorctl restart all
