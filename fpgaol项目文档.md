@@ -162,3 +162,16 @@ https://passport.ustc.edu.cn/login?service=https://fpgaol.ustc.edu.cn/accounts/l
 
 访问 http://fpgaol.ustc.edu.cn/fpga/list 即可查看节点的使用情况
 
+## https证书续约
+
+首先关闭443端口，用kill即可
+
+运行如下命令：
+
+```
+acme.sh --cron -f --server letsencrypt
+```
+
+acme.sh在etc里面
+
+然后重启nginx即可
