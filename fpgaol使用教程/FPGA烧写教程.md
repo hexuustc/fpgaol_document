@@ -28,7 +28,7 @@
 
 ​		FPGAOL的LED部分位于如下位置：
 
-![LED](.\picture\FPGA烧写教程\LED.png)
+![LED](./picture/FPGA烧写教程/LED.png)
 
 ​		LED控制的逻辑比较简单，当代码中某时刻led[i]的电平为高时，对应端口的LED灯亮，LED编号与FPGA管脚对应关系为：
 
