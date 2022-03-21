@@ -6,17 +6,17 @@
 
 ​		点进系统生成的**Panel Link**的URL后，主页面大致如下显示：
 
-![MainPage](.\picture\FPGA烧写教程\MainPage.png)
+![MainPage](./picture/FPGA烧写教程/MainPage.png)
 
 ## 如何选择文件并烧写
 
 ​		下面介绍如何选择文件与烧写文件。烧写出比特流文件后，第一步点击`Select File`按钮，选择所需烧写的后缀为.bit的文件，打开后点击`Program`，即可烧写对应代码生成的文件。
 
-![SelectFileandProgram](.\picture\FPGA烧写教程\SelectFileandProgram.png)
+![SelectFileandProgram](./picture/FPGA烧写教程/SelectFileandProgram.png)
 
 ​		出现Program Success即表示烧写成功，如下所示：
 
-![ProgramSuccess](.\picture\FPGA烧写教程\ProgramSuccess.png)
+![ProgramSuccess](./picture/FPGA烧写教程/ProgramSuccess.png)
 
 ​		若出现烧写失败的情况，**可选择文件再烧写一次或是退出Release并重新Acquire一个新板子进行烧写**。
 
@@ -55,7 +55,7 @@
 
 ​		FPGAOL的sw部分位于如下位置：
 
-![sw](.\picture\FPGA烧写教程\sw.png)
+![sw](./picture/FPGA烧写教程/sw.png)
 
 ​		sw是FPGAOL常用的输入控制方式，在默认情况下，`sw[7:0]`的输入初始均为低电平(0)，当点击某个sw时，便可以调整输入。
 
@@ -84,7 +84,7 @@
 
 ​		FPGAOL的Hexplay的部分位于如下位置：
 
-![Hexplay](.\picture\FPGA烧写教程\Hexplay.png)
+![Hexplay](./picture/FPGA烧写教程/Hexplay.png)
 
 ​		Hexplay部分引入了8个七段数码管，每个七段数码管通过`hexplay_data[3:0]`与`hexplay_an[2:0]`控制输出。`hexplay_data[3:0]`为输出16进制值的大小，`hexplay_an[2:0]`为二进制对应输出的数位，类似C语言中的`Hexplay[hexplay_an] = hexplay_data`。**例如**，若`hexplay_an=3'b010, hexplay_data=4'b1010`，则在下标为2的数位上显示`A`。上述图示为`hexplay_an=3'b000, hexplay_data=4'b0000`的初始情况。
 
@@ -114,7 +114,7 @@
 
 ​		FPGAOL的segplay(八段数码管)部分位于如下位置:
 
-![Segplay](.\picture\FPGA烧写教程\Segplay.png)
+![Segplay](./picture/FPGA烧写教程/Segplay.png)
 
 ​		SegPlay的显示方式与Hexplay不同，为了弥补hex_play不能按段来显示数字的缺陷，我们提供了seg_play，它是支持通过段来控制的一位数码管。为了节约管脚，它的控制信号是与LED共享的，可以通过LED的信号来控制它，Segplay对应LED与管脚如下所示：
 
@@ -125,7 +125,7 @@
 
 ​		每个LED对应的数码管段如下所示：
 
-![Hexplayzoom](.\picture\FPGA烧写教程\Hexplayzoom.png)
+![Hexplayzoom](./picture/FPGA烧写教程/Hexplayzoom.png)
 
 ​		
 
@@ -133,7 +133,7 @@
 
 ​		FPGAOL的button的部分位于如下位置：
 
-![Button](.\picture\FPGA烧写教程\Button.png)
+![Button](./picture/FPGA烧写教程/Button.png)
 
 ​		该按钮在**按下时为高电平，松开时为低电平**，该btn对应管脚**B18**。
 
