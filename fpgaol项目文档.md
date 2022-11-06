@@ -175,3 +175,10 @@ acme.sh --cron -f --server letsencrypt
 acme.sh在etc里面
 
 然后重启nginx即可
+
+如果遇到nginx pid丢失问题，可以运行以下命令即可
+
+```
+sudo nginx -c /etc/nginx/nginx.conf
+```
+
