@@ -62,4 +62,4 @@ https://github.com/hexuustc/fpgaol_pi_ng
 
 ### 结构图
 
-![绘图2](.\img\代码仓库结构图.png)
+![代码仓库结构图](img/代码仓库结构图.png)
