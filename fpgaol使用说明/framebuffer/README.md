@@ -1,0 +1,5 @@
+# 使用framebuffer和鼠标进行绘画的示例程序
+
+verilog代码持续读取鼠标坐标，如果位置发生变化就在framebuffer对应的坐标处改变颜色值
+
+使用封装的模块pspi_host.v来对共享内存进行读写
